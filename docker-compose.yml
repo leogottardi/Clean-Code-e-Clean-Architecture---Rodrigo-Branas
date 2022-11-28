@@ -1,0 +1,18 @@
+version: '3.3'
+
+services:
+  postgres:
+    image: postgres:13
+    restart: always
+    container_name: postgres_ccca9
+    ports:
+      - "5432:5432"
+    environment:
+      PGUSER: sandbox
+      POSTGRES_USER: sandbox
+      POSTGRES_PASSWORD: sandbox
+      PGPASSWORD: sandbox
+      POSTGRES_DB: ccca9
+      PGDATABASE: cccat9
+
+
